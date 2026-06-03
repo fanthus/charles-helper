@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000010000000000000001 /* CharlesParseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000001 /* CharlesParseApp.swift */; };
+		A10000010000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000002 /* ContentView.swift */; };
+		A10000010000000000000003 /* ChlsParseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000003 /* ChlsParseResult.swift */; };
+		A10000010000000000000004 /* PythonRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000004 /* PythonRunner.swift */; };
+		A10000010000000000000005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000005 /* Assets.xcassets */; };
+		A10000010000000000000006 /* chls_gzip.py in Resources */ = {isa = PBXBuildFile; fileRef = A10000020000000000000006 /* chls_gzip.py */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A10000020000000000000001 /* CharlesParseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharlesParseApp.swift; sourceTree = "<group>"; };
+		A10000020000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A10000020000000000000003 /* ChlsParseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChlsParseResult.swift; sourceTree = "<group>"; };
+		A10000020000000000000004 /* PythonRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonRunner.swift; sourceTree = "<group>"; };
+		A10000020000000000000005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A10000020000000000000006 /* chls_gzip.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = chls_gzip.py; sourceTree = "<group>"; };
+		A10000020000000000000007 /* CharlesParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharlesParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000020000000000000008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		A10000040000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A10000040000000000000002 /* CharlesParse */,
+				A10000040000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A10000040000000000000002 /* CharlesParse */ = {
+			isa = PBXGroup;
+			children = (
+				A10000020000000000000001 /* CharlesParseApp.swift */,
+				A10000020000000000000002 /* ContentView.swift */,
+				A10000040000000000000004 /* Models */,
+				A10000040000000000000005 /* Services */,
+				A10000020000000000000005 /* Assets.xcassets */,
+				A10000020000000000000006 /* chls_gzip.py */,
+				A10000020000000000000008 /* Info.plist */,
+			);
+			path = CharlesParse;
+			sourceTree = "<group>";
+		};
+		A10000040000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A10000020000000000000007 /* CharlesParse.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A10000040000000000000004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A10000020000000000000003 /* ChlsParseResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A10000040000000000000005 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A10000020000000000000004 /* PythonRunner.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A10000050000000000000001 /* CharlesParse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10000060000000000000003 /* Build configuration list for PBXNativeTarget "CharlesParse" */;
+			buildPhases = (
+				A10000050000000000000002 /* Sync chls_gzip.py */,
+				A10000030000000000000002 /* Sources */,
+				A10000030000000000000004 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CharlesParse;
+			productName = CharlesParse;
+			productReference = A10000020000000000000007 /* CharlesParse.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A10000070000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					A10000050000000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = A10000060000000000000001 /* Build configuration list for PBXProject "CharlesParse" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A10000040000000000000001;
+			productRefGroup = A10000040000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A10000050000000000000001 /* CharlesParse */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A10000030000000000000004 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000010000000000000005 /* Assets.xcassets in Resources */,
+				A10000010000000000000006 /* chls_gzip.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A10000050000000000000002 /* Sync chls_gzip.py */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../chls_gzip.py",
+			);
+			name = "Sync chls_gzip.py";
+			outputPaths = (
+				"$(SRCROOT)/CharlesParse/chls_gzip.py",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp \"${SRCROOT}/../chls_gzip.py\" \"${SRCROOT}/CharlesParse/chls_gzip.py\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A10000030000000000000002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000010000000000000001 /* CharlesParseApp.swift in Sources */,
+				A10000010000000000000002 /* ContentView.swift in Sources */,
+				A10000010000000000000003 /* ChlsParseResult.swift in Sources */,
+				A10000010000000000000004 /* PythonRunner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A10000080000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A10000080000000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A10000080000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7PLGSDP5AT;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CharlesParse/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihuman.CharlesParse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A10000080000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7PLGSDP5AT;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CharlesParse/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ihuman.CharlesParse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A10000060000000000000001 /* Build configuration list for PBXProject "CharlesParse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000080000000000000001 /* Debug */,
+				A10000080000000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10000060000000000000003 /* Build configuration list for PBXNativeTarget "CharlesParse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000080000000000000003 /* Debug */,
+				A10000080000000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A10000070000000000000001 /* Project object */;
+}

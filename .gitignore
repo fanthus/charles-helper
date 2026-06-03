@@ -1,0 +1,11 @@
+.DS_Store
+*.xcuserstate
+**/xcuserdata/
+build/
+DerivedData/
+*.pyc
+__pycache__/
+.venv/
+payload
+payload 2
+payload.gz
