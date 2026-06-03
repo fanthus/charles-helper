@@ -22,7 +22,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>CHLS 解析</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.ihuman.CharlesParse</string>
+	<string>com.fanthus.CharlesParse</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>CFBundleShortVersionString</key>
